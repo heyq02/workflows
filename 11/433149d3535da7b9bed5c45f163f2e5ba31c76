@@ -1,0 +1,14 @@
+.github/workflows/release-gh-pkg.yml
+  h_a57efa94f24ca5 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "11433149d3535da7b9bed5c45f163f2e5ba31c76",
+  "prompts": {},
+  "humans": {
+    "h_a57efa94f24ca5": {
+      "author": "heyongqi10 <heyongqi10@jd.com>"
+    }
+  }
+}
