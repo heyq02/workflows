@@ -1,0 +1,14 @@
+.github/workflows/test.yml
+  h_a57efa94f24ca5 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "e877f6cd1623834e1b20647c8f716321324a8d8c",
+  "prompts": {},
+  "humans": {
+    "h_a57efa94f24ca5": {
+      "author": "heyongqi10 <heyongqi10@jd.com>"
+    }
+  }
+}
