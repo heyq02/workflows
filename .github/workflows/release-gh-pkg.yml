@@ -1,19 +1,19 @@
 name: Release GitHub Package
 
 on:
-    workflow_call:
-        inputs:
-          github-release:
-            required: false
-            type: boolean
-            default: true
-          github-package-publish:
-            required: false
-            type: boolean
-            default: false
-          github-package-scope:
-            required: true
-            type: string
+  workflow_call:
+    inputs:
+      github-release:
+        required: false
+        type: boolean
+        default: true
+      github-package-publish:
+        required: false
+        type: boolean
+        default: false
+      github-package-scope:
+        required: true
+        type: string
 
 jobs:
   release-gh-pkg:

@@ -1,0 +1,37 @@
+name: autofix.ci
+
+on:
+  workflow_call:
+    inputs:
+      fix:
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Vite+
+        uses: voidzero-dev/setup-vp@v1.21.2
+        with:
+          node-version: lts
+          cache: true
+          run-install: false
+
+      - name: Install
+        run: vp install --frozen-lockfile
+
+      - name: Check
+        run: vp check
+
+      - name: Fix
+        if: ${{ inputs.fix }}
+        run: vp check --fix
+
+      - uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a

@@ -1,12 +1,12 @@
 name: Test
 
 on:
-    workflow_call:
-        inputs:
-          coverage:
-            required: false
-            type: boolean
-            default: false
+  workflow_call:
+    inputs:
+      coverage:
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   test:
@@ -38,7 +38,7 @@ jobs:
 
       - name: Unit Test
         run: vp test
-      
+
       - name: Coverage Test
         if: ${{ inputs.coverage }}
         run: vp test --coverage
