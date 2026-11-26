@@ -1,0 +1,19 @@
+.github/workflows/test.yml
+  s_185ca1f08fe083::t_23a8e9da7a0e7f 13-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "61e1162da4fb62ee642e78a62f8596fbe46db501",
+  "prompts": {},
+  "sessions": {
+    "s_185ca1f08fe083": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "44a788d4-a6bf-4a54-91d5-b81975c017dc",
+        "model": "grok-4.7"
+      },
+      "human_author": "heyongqi10 <heyongqi10@jd.com>"
+    }
+  }
+}
