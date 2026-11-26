@@ -1,0 +1,41 @@
+name: Test
+
+on:
+    workflow_call:
+        inputs:
+          coverage:
+            required: false
+            type: boolean
+            default: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      packages: write
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Vite+
+        uses: voidzero-dev/setup-vp@v1.21.2
+        with:
+          node-version: lts
+          cache: true
+          run-install: false
+
+      - name: Install
+        run: vp install --frozen-lockfile
+
+      - name: Unit Test
+        run: vp test
+      
+      - name: Coverage Test
+        if: ${{ inputs.coverage }}
+        run: vp test --coverage
