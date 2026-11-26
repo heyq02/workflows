@@ -1,0 +1,14 @@
+.github/workflows/autofix.yml
+  h_a57efa94f24ca5 28-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "f28c74251a53b373027d3976ffb0674830e1ecaf",
+  "prompts": {},
+  "humans": {
+    "h_a57efa94f24ca5": {
+      "author": "heyongqi10 <heyongqi10@jd.com>"
+    }
+  }
+}
