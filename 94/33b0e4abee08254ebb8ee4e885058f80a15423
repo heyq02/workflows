@@ -1,0 +1,24 @@
+.github/workflows/autofix.yml
+  h_a57efa94f24ca5 1-37
+.github/workflows/release-gh-pkg.yml
+  h_a57efa94f24ca5 4-16
+.github/workflows/test.yml
+  h_a57efa94f24ca5 4-9,41
+.gitignore
+  h_a57efa94f24ca5 1
+package.json
+  h_a57efa94f24ca5 1-5
+pnpm-lock.yaml
+  h_a57efa94f24ca5 1-1599
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "9433b0e4abee08254ebb8ee4e885058f80a15423",
+  "prompts": {},
+  "humans": {
+    "h_a57efa94f24ca5": {
+      "author": "heyongqi10 <heyongqi10@jd.com>"
+    }
+  }
+}
